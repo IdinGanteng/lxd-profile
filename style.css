@@ -12,7 +12,6 @@
     --transition-fast: 0.2s ease-out;
   }
   
-  
   *,
   *::before,
   *::after {
@@ -49,7 +48,7 @@
       rgba(5, 3, 12, 0.6),
       transparent
     );
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(110, 140, 251, 0.25);
   }
   
   .logo {
@@ -137,7 +136,7 @@
   .hero-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top, rgba(255, 79, 179, 0.24), transparent 55%);
+    background: radial-gradient(circle at top, rgba(110, 140, 251, 0.3), transparent 55%);
     pointer-events: none;
   }
   .hero-content {
@@ -203,7 +202,7 @@
       background var(--transition-fast), border-color var(--transition-fast);
   }
   .btn.primary {
-    background: linear-gradient(135deg, #ff4fb3, #ffb347);
+    background: linear-gradient(135deg, #6E8CFB, #636CCB);
     color: #050308;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6);
   }
@@ -217,7 +216,7 @@
     border-color: var(--accent);
   }
   .btn.ghost:hover {
-    background: rgba(255, 79, 179, 0.1);
+    background: rgba(110, 140, 251, 0.12);
   }
   
   /* SCROLL INDICATOR */
@@ -273,66 +272,72 @@
   
   /* TRAILER */
   /* SECTION TRAILER FULLSCREEN DENGAN BACKGROUND VIDEO BLUR */
-    .section-trailer {
-        position: relative;
-        min-height: 100vh;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .trailer-bg {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-        z-index: 0;
-      }
-      
-      .trailer-bg video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: blur(18px);
-        transform: scale(1.1); /* sedikit zoom supaya blur tidak ada edge */
-      }
-      .trailer-overlay {
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(circle at center, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.8));
-        z-index: 1;
-      }
-      .trailer-content {
-        position: relative;
-        z-index: 2;
-        max-width: 1100px;
-        padding: calc(var(--nav-height) + 2rem) 7vw 3rem;
-        text-align: left;
-      }
-      
-      .trailer-content .section-title {
-        text-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
-      }
-      
-      .trailer-content .section-desc {
-        text-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
-      }
-      
-      /* FRAME VIDEO DEPAN (SAMA SEPERTI SEBELUMNYA, TAPI DI TENGAH) */
-      .trailer-frame {
-        margin-top: 1.5rem;
-        border-radius: var(--radius-xl);
-        overflow: hidden;
-        border: 1px solid var(--border-soft);
-        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
-      }
-      
-      .trailer-frame video {
-        width: 100%;
-        display: block;
-      }
-            
+  .section-trailer {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .trailer-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .trailer-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(18px);
+    transform: scale(1.1); /* sedikit zoom supaya blur tidak ada edge */
+  }
+  
+  .trailer-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      rgba(110, 140, 251, 0.25),
+      rgba(0, 0, 0, 0.9)
+    );
+    z-index: 1;
+  }
+  
+  .trailer-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    padding: calc(var(--nav-height) + 2rem) 7vw 3rem;
+    text-align: left;
+  }
+  
+  .trailer-content .section-title {
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
+  }
+  
+  .trailer-content .section-desc {
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+  }
+  
+  /* FRAME VIDEO DEPAN */
+  .trailer-frame {
+    margin-top: 1.5rem;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9);
+  }
+  
+  .trailer-frame video {
+    width: 100%;
+    display: block;
+  }
+  
   /* CHARACTERS */
   .section-characters {
     background: radial-gradient(circle at top, #241733 0, #050308 60%);
@@ -363,6 +368,48 @@
     display: block;
   }
   
+  /* === WORLD SECTION DENGAN BACKGROUND VIDEO BLUR === */
+  .section-world {
+    position: relative;
+    min-height: 100vh;
+    padding: calc(var(--nav-height) + 3rem) 7vw 5rem;
+    overflow: hidden;
+  }
+  
+  /* Layer belakang: video blur */
+  .world-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .world-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(18px);
+    transform: scale(1.1);
+  }
+  
+  /* Overlay di atas video */
+  .world-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      rgba(3, 5, 26, 0.2),
+      rgba(3, 5, 26, 0.9)
+    );
+    z-index: 1;
+  }
+  
+  /* Konten world di depan */
+  .section-world .section-inner {
+    position: relative;
+    z-index: 2;
+  }
+  
   /* WORLD GRID */
   .world-grid {
     display: grid;
@@ -373,7 +420,7 @@
     background: rgba(5, 3, 12, 0.9);
     border-radius: var(--radius-xl);
     padding: 1.5rem;
-    border: 1px solid var(--border-soft);
+    border: 1px solid rgba(110, 140, 251, 0.18);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     opacity: 0;
     transform: translateY(24px);
@@ -457,9 +504,9 @@
   
   /* RESPONSIVE */
   /* =========================
-   RESPONSIVE: ≤ 900px
-   ========================= */
-@media (max-width: 900px) {
+     RESPONSIVE: ≤ 900px
+     ========================= */
+  @media (max-width: 900px) {
     /* NAVBAR: logo di kiri, tombol penting tetap kelihatan */
     .nav {
       padding: 0 4vw;
@@ -473,11 +520,6 @@
       font-size: 0.75rem;
       letter-spacing: 0.12em;
     }
-  
-    /* Kalau mau yang lebih minimal:
-       Bisa sembunyikan sebagian link dan sisakan CTA
-       .nav-right .nav-link:not(.cta) { display: none; }
-     */
   
     /* HERO: teks lebih sempit, tombol stacked */
     .hero-content {
@@ -540,11 +582,10 @@
     }
   }
   
-  
   /* =========================
-   RESPONSIVE: ≤ 600px
-   ========================= */
-@media (max-width: 600px) {
+     RESPONSIVE: ≤ 600px
+     ========================= */
+  @media (max-width: 600px) {
     /* NAVBAR: sembunyikan link, sisakan logo saja (versi simpel) */
     .nav-right {
       display: none;
@@ -653,6 +694,10 @@
       padding-inline: 5vw;
       font-size: 0.75rem;
     }
-  }
   
+    /* WORLD SECTION padding lebih rapat */
+    .section-world {
+      padding: calc(var(--nav-height) + 2.2rem) 5vw 3.5rem;
+    }
+  }
   
