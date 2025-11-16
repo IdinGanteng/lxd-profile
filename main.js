@@ -110,7 +110,7 @@ if (audioToggle && bgMusic) {
     if (bgMusic.paused) {
       try {
         bgMusic.muted = false;
-        bgMusic.volume = 0.1;
+        bgMusic.volume = 0.5;
         await bgMusic.play();
         isMuted = false;
         updateAudioButton();
