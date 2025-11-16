@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Neo Vice — Action Open World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo">LXD<span>IGITALFACTORY</span></div>
+    </div>
+    <div class="nav-right">
+      <a href="#trailer" class="nav-link">3D Animation</a>
+      <a href="#characters" class="nav-link">Development</a>
+      <a href="#world" class="nav-link">About Us</a>
+      <a href="#preorder" class="nav-link cta">Lets Connect</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="section hero" id="top">
+    <div class="hero-bg parallax-layer"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <!-- <p class="coming-label">Coming</p> -->
+      <h1 class="hero-title">
+        Digital Experience Design &<br />
+        Development Agency
+      </h1>
+      <p class="hero-subtitle">GROW YOUR BUSSINESS WITH US</p>
+
+      <div class="platforms">
+        <span>All Design</span>
+        <span>Web App</span>
+        <span>Mobile App</span>
+        <span>Web App</span>
+        <span>VFX</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/085848940211" class="btn primary">Consult Now</a>
+        <a href="#preorder" class="btn ghost">Subscribe</a>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll for more</span>
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAILER SECTION (PAKAI VIDEO FILE) -->
+  <section class="section section-trailer" id="trailer">
+    <!-- LAYER BELAKANG: VIDEO BLUR FULLSCREEN -->
+    <div class="trailer-bg">
+      <video
+        src="./assets/footage1.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+    </div>
+  
+    <!-- OVERLAY GELAP TIPIS BIAR TEKS TERBACA -->
+    <div class="trailer-overlay"></div>
+  
+    <!-- LAYER DEPAN: TEKS + FRAME VIDEO NORMAL -->
+    <div class="trailer-content section-inner fade-on-scroll">
+      <h2 class="section-title">Pioneer Things</h2>
+      <p class="section-desc">
+        The design style of your business influences the visual value.
+      </p>
+  
+      <div class="trailer-frame">
+        <video
+          src="./assets/footage1.mp4"
+          controls
+          playsinline
+          muted
+        >
+          Browser kamu tidak mendukung video HTML5.
+        </video>
+      </div>
+    </div>
+  </section>  
+
+  <!-- CHARACTERS SECTION (VIDEO AUTOPLAY SAAT SCROLL) -->
+  <section class="section section-characters" id="characters">
+    <div class="section-inner">
+      <h2 class="section-title">Interface Style</h2>
+      <p class="section-desc">
+        Easy reach to your customers
+      </p>
+
+      <div class="cards-grid">
+        <article class="character-card slide-up-on-scroll">
+          <video controls muted loop>
+            <source src="./assets/footage2.mp4" type="video/mp4" />
+          </video>
+        </article>
+
+        <article class="character-card slide-up-on-scroll">
+          <video controls muted loop>
+            <source src="./assets/footage2.mp4" type="video/mp4" />
+          </video>
+        </article>
+
+        <article class="character-card slide-up-on-scroll">
+          <video controls muted loop>
+            <source src="./assets/footage2.mp4" type="video/mp4" />
+          </video>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORLD SECTION -->
+  <section class="section section-dark" id="world">
+    <div class="section-inner">
+      <h2 class="section-title">LXD Works</h2>
+      <p class="section-desc">
+        There is no limit to developing your business, 
+        our clients are not only institutions or private companies, we are also available for small businesses.
+      </p>
+
+      <div class="world-grid">
+        <div class="world-item fade-on-scroll">
+          <div class="world-image world-image-1"></div>
+          <h3>Vice Bay</h3>
+          <p>Tourist paradise by day. Underground deals after dark.</p>
+        </div>
+        <div class="world-item fade-on-scroll">
+          <div class="world-image world-image-2"></div>
+          <h3>Old Blocks</h3>
+          <p>Where loyalty is currency, and every corner has eyes.</p>
+        </div>
+        <div class="world-item fade-on-scroll">
+          <div class="world-image world-image-3"></div>
+          <h3>Outskirts</h3>
+          <p>Lonely highways, secret airstrips, and hidden stashes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREORDER / CTA -->
+  <section class="section section-preorder" id="preorder">
+    <div class="section-inner fade-on-scroll">
+      <h2 class="section-title"></h2>
+      <p class="section-desc">
+        Get the latest updates.
+      </p>
+
+      <div class="preorder-buttons">
+        <a href="https://www.instagram.com/lxdigitalfactory" class="btn primary">Our Company</a>
+        <a href="https://www.instagram.com/lxdvfx.studio" class="btn primary">LXD Studios</a>
+      </div>
+
+      <form class="newsletter-form">
+        <div class="newsletter-input">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn ghost">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>All trademarks are property of their respective owners.</p>
+    <p>Powered By:</p>
+    <p>© 2025 PT DIGI KARYA HARMONI</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
