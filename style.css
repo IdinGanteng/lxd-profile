@@ -469,7 +469,7 @@
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .section {
       padding-inline: 5vw;
     }
