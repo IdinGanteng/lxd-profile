@@ -19,13 +19,12 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (tidak diubah) -->
   <section class="section hero" id="top">
     <div class="hero-bg parallax-layer"></div>
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-      <!-- <p class="coming-label">Coming</p> -->
       <h1 class="hero-title">
         Digital Experience Design &<br />
         Development Agency
@@ -52,9 +51,9 @@
     </div>
   </section>
 
-  <!-- TRAILER SECTION (PAKAI VIDEO FILE) -->
+  <!-- TRAILER SECTION -->
   <section class="section section-trailer" id="trailer">
-    <!-- LAYER BELAKANG: VIDEO BLUR FULLSCREEN -->
+    <!-- LAYER BELAKANG: TETAP VIDEO BLUR FULLSCREEN -->
     <div class="trailer-bg">
       <video
         src="./assets/footage1.mp4"
@@ -64,31 +63,28 @@
         playsinline
       ></video>
     </div>
-  
+
     <!-- OVERLAY GELAP TIPIS BIAR TEKS TERBACA -->
     <div class="trailer-overlay"></div>
-  
-    <!-- LAYER DEPAN: TEKS + FRAME VIDEO NORMAL -->
+
+    <!-- LAYER DEPAN: TEKS + FRAME GIF (BUKAN VIDEO) -->
     <div class="trailer-content section-inner fade-on-scroll">
       <h2 class="section-title">Pioneer Things</h2>
       <p class="section-desc">
         The design style of your business influences the visual value.
       </p>
-  
+
       <div class="trailer-frame">
-        <video
-          src="./assets/footage1.mp4"
-          controls
-          playsinline
-          muted
-        >
-          Browser kamu tidak mendukung video HTML5.
-        </video>
+        <!-- GIF pengganti video -->
+        <img
+          src="./assets/trailer.gif"
+          alt="Pioneer Things Animation"
+        />
       </div>
     </div>
-  </section>  
+  </section>
 
-  <!-- CHARACTERS SECTION (VIDEO AUTOPLAY SAAT SCROLL) -->
+  <!-- CHARACTERS SECTION (CARD GIF) -->
   <section class="section section-characters" id="characters">
     <div class="section-inner">
       <h2 class="section-title">Interface Style</h2>
@@ -98,34 +94,28 @@
 
       <div class="cards-grid">
         <article class="character-card slide-up-on-scroll">
-          <video controls muted loop>
-            <source src="./assets/footage2.mp4" type="video/mp4" />
-          </video>
+          <img src="./assets/card1.gif" alt="Interface Style 1" />
         </article>
 
         <article class="character-card slide-up-on-scroll">
-          <video controls muted loop>
-            <source src="./assets/footage2.mp4" type="video/mp4" />
-          </video>
+          <img src="./assets/card1.gif" alt="Interface Style 2" />
         </article>
 
         <article class="character-card slide-up-on-scroll">
-          <video controls muted loop>
-            <source src="./assets/footage2.mp4" type="video/mp4" />
-          </video>
+          <img src="./assets/card1.gif" alt="Interface Style 3" />
         </article>
       </div>
     </div>
   </section>
 
-  <!-- WORLD SECTION -->
+  <!-- WORLD SECTION (BACKGROUND VIDEO TETAP) -->
   <section class="section section-dark" id="world">
     <div class="section-inner">
-        <h2 class="section-title">LXD Works</h2>
-        <p class="section-desc">
-          There is no limit to developing your business, 
-          our clients are not only institutions or private companies, we are also available for small businesses.
-        </p>
+      <h2 class="section-title">LXD Works</h2>
+      <p class="section-desc">
+        There is no limit to developing your business, 
+        our clients are not only institutions or private companies, we are also available for small businesses.
+      </p>
 
       <div class="world-grid">
         <div class="world-item fade-on-scroll">
@@ -147,12 +137,14 @@
     </div>
   </section>
 
+  <!-- CONTACT / PREORDER SECTION DENGAN BACKGROUND VIDEO BLUR -->
   <section class="section section-world" id="preorder">
     <div class="world-bg">
+      <!-- ini juga tetap VIDEO, bukan GIF -->
       <video src="./assets/footage3.mp4" autoplay muted loop playsinline></video>
     </div>
     <div class="world-overlay"></div>
-  
+
     <div class="section-inner">
       <h2 class="section-title">Contact</h2>
       <div class="section-inner fade-on-scroll">
@@ -160,12 +152,12 @@
         <p class="section-desc">
           Get the latest updates.
         </p>
-  
+
         <div class="preorder-buttons">
           <a href="https://www.instagram.com/lxdigitalfactory" class="btn primary">Our Company</a>
           <a href="https://www.instagram.com/lxdvfx.studio" class="btn primary">LXD Studios</a>
         </div>
-  
+
         <form class="newsletter-form">
           <div class="newsletter-input">
             <input
@@ -187,6 +179,15 @@
     <p>© 2025 PT DIGI KARYA HARMONI</p>
   </footer>
 
+  <div class="audio-control">
+    <button id="audioToggle" aria-label="Toggle music">
+      🔊 Music On
+    </button>
+    <audio id="bgMusic" loop>
+      <source src="./assets/bgmusic.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio HTML5.
+    </audio>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
