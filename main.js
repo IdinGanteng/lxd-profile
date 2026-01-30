@@ -127,5 +127,16 @@ if (audioToggle && bgMusic) {
   });
 }
 
+const modal = document.getElementById("chatModal");
+const openBtn = document.getElementById("openChat");
+const closeBtn = document.getElementById("closeChat");
+
+openBtn.onclick = () => modal.style.display = "block";
+closeBtn.onclick = () => modal.style.display = "none";
+
+// Tutup jika klik area gelap
+modal.onclick = (e) => {
+  if (e.target === modal) modal.style.display = "none";
+};
 // Inisialisasi teks tombol saat awal (kalau butuh)
 updateAudioButton();

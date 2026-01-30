@@ -188,6 +188,25 @@
       Browser kamu tidak mendukung audio HTML5.
     </audio>
   </div>
+  <!-- Tombol buka chat -->
+  <button id="openChat" class="chat-btn">💬 Chat CS</button>
+
+  <!-- Modal Chat -->
+  <div id="chatModal" class="chat-modal">
+    <div class="chat-content">
+      <div class="chat-header">
+        <span>Customer Service</span>
+        <button id="closeChat">✖</button>
+      </div>
+
+      <iframe
+        src="https://chat-ai-three-jet.vercel.app/"
+        class="chat-iframe"
+        title="Chat Customer Service"
+      ></iframe>
+    </div>
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
