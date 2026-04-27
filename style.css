@@ -437,13 +437,43 @@
     background-position: center;
   }
   .world-image-1 {
-    background-image: url("https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&w=1600");
+    background-image: url("./assets/figma.jpg");
   }
   .world-image-2 {
-    background-image: url("https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&w=1600");
+    background-image: url("./assets/javascript.png");
   }
   .world-image-3 {
-    background-image: url("https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&w=1600");
+    background-image: url("./assets/react-js.png");
+  }
+  .world-image-4 {
+    background-image: url("./assets/tailwind.jpg");
+  }
+
+  .porto-image {
+    height: 160px;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .porto-image-1 {
+    background-image: url("./assets/porto1.png");
+  }
+  .porto-image-2 {
+    background-image: url("./assets/porto2.png");
+  }
+  .porto-image-3 {
+    background-image: url("./assets/porto3.png");
+  }
+  .porto-image-4 {
+    background-image: url("./assets/porto4.png");
+  }
+  .porto-image-5 {
+    background-image: url("./assets/porto5.png");
+  }
+  .porto-image-6 {
+    background-image: url("./assets/porto6.png");
   }
   
   /* PREORDER SECTION */
